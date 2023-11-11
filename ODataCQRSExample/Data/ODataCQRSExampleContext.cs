@@ -70,7 +70,7 @@ public partial class ODataCqrsExampleContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("STATE");
 
-            entity.HasOne(d => d.Employee).WithOne(p => p.EmployeeAddress)
+            entity.HasOne(d => d.Employee).WithOne(p => p.Address)
                 .HasForeignKey<EmployeeAddress>(d => d.Id)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_EMPLOYEE_ADDRESS_EMPLOYEE");

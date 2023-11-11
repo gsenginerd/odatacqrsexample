@@ -1,3 +1,4 @@
+using System.Reflection;
 using Microsoft.AspNetCore.OData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OData.Edm;
@@ -14,7 +15,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ODataCqrsExampleContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ODataExampleConnection")));
-builder.Services.AddControllers().AddOData(options => options.Select().Filter().Count().OrderBy().Expand().AddRouteComponents("v1", GetEdmModel()));
+builder.Services.AddControllers().AddOData(options => options.Select().Filter().Count().OrderBy().Expand().SetMaxTop(2).AddRouteComponents("v1", GetEdmModel()));
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
 
 var app = builder.Build();
 
