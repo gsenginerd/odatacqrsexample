@@ -2,6 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataCQRSExample", "ODataCQRSExample\ODataCQRSExample.csproj", "{623CDC5F-F76B-4A3B-8575-DD29371479BD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBScripts", "DBScripts", "{FD3FB858-840F-4204-AECC-E7FFB2B2EAB4}"
+	ProjectSection(SolutionItems) = preProject
+		DBScripts\DBScripts.sql = DBScripts\DBScripts.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
