@@ -13,5 +13,5 @@ public class EmployeeCommand : IRequest<Employee>
 
     public string? JobRole { get; set; }
 
-    public EmployeeAddressCommand Address { get; set; }
+    public AddressCommand Address { get; set; }
 }

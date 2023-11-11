@@ -1,0 +1,64 @@
+﻿[
+   {
+      "SchemaName": "dbo",
+      "Tables": [
+         {
+            "Columns": [
+               {
+                  "Name": "ID",
+                  "NewName": "Id"
+               },
+               {
+                  "Name": "FIRST_NAME",
+                  "NewName": "FirstName"
+               },
+               {
+                  "Name": "LAST_NAME",
+                  "NewName": "LastName"
+               },
+               {
+                  "Name": "SALARY",
+                  "NewName": "Salary"
+               },
+               {
+                  "Name": "JOB_ROLE",
+                  "NewName": "JobRole"
+               }
+            ],
+            "Name": "EMPLOYEE",
+            "NewName": "Employee"
+         },
+         {
+            "Columns": [
+               {
+                  "Name": "ID",
+                  "NewName": "Id"
+               },
+               {
+                  "Name": "HOUSE_NUMBER",
+                  "NewName": "HouseNumber"
+               },
+               {
+                  "Name": "CITY",
+                  "NewName": "City"
+               },
+               {
+                  "Name": "STATE",
+                  "NewName": "State"
+               },
+               {
+                  "Name": "COUNTRY",
+                  "NewName": "Country"
+               },
+               {
+                  "Name": "EMPLOYEE_ID",
+                  "NewName": "EmployeeId"
+               }
+            ],
+            "Name": "EMPLOYEE_ADDRESS",
+            "NewName": "Address"
+         }
+      ],
+      "UseSchemaName": false
+   }
+]

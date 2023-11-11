@@ -1,6 +1,6 @@
 ﻿namespace ODataCQRSExample.Features.Employees.Commands;
 
-public class EmployeeAddressCommand
+public class AddressCommand
 {
     public string? HouseNumber { get; set; }
 
