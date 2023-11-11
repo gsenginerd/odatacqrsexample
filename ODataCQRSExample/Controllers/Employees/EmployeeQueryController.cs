@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Query;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
-using Microsoft.OData.ModelBuilder;
 using ODataCQRSExample.Data;
 using ODataCQRSExample.Data.Entities;
 

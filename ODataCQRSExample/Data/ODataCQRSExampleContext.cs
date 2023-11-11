@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ODataCQRSExample.Data.Entities;
+
 namespace ODataCQRSExample.Data;
 
 public partial class ODataCqrsExampleContext : DbContext
@@ -27,7 +28,8 @@ public partial class ODataCqrsExampleContext : DbContext
         {
             entity.ToTable("EMPLOYEE");
 
-            entity.Property(e => e.Id).HasColumnName("ID");
+            entity.Property(e => e.Id)
+                .HasColumnName("ID");
             entity.Property(e => e.FirstName)
                 .HasMaxLength(200)
                 .IsUnicode(false)
@@ -50,7 +52,6 @@ public partial class ODataCqrsExampleContext : DbContext
             entity.ToTable("EMPLOYEE_ADDRESS");
 
             entity.Property(e => e.Id)
-                .ValueGeneratedOnAdd()
                 .HasColumnName("ID");
             entity.Property(e => e.City)
                 .HasMaxLength(50)

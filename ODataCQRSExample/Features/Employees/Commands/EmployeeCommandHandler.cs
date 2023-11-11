@@ -18,12 +18,13 @@ public class EmployeeCommandHandler : IRequestHandler<EmployeeCommand, Employee>
             FirstName = request.FirstName,
             LastName = request.LastName,
             Salary = request.Salary,
-            JobRole = request.JobRole
+            JobRole = request.JobRole,
+            Address = new EmployeeAddress { City = request.Address!.City, State = request.Address.State, Country = request.Address.Country }
         };
 
-        _oDataCqrsExampleContext.Add(employee);
+        _oDataCqrsExampleContext.Employees.Add(employee);
 
-        await _oDataCqrsExampleContext.SaveChangesAsync();
+        await _oDataCqrsExampleContext.SaveChangesAsync(cancellationToken);
 
         return employee;
     }

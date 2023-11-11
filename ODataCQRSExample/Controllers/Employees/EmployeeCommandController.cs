@@ -19,7 +19,7 @@ namespace ODataCQRSExample.Controllers.Employees
         public EmployeeCommandController(IMediator mediator) => this._mediator = mediator;
 
         [HttpPost()]
-        public async Task<ActionResult<Employee>> CreatePerson(EmployeeCommand request) => (await _mediator.Send(request) as Employee)!;
+        public async Task<ActionResult<Employee>> CreateEmployee(EmployeeCommand request) => (await _mediator.Send(request) as Employee)!;
         
     }
 }
