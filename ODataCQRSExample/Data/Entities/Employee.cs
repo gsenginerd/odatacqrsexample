@@ -17,5 +17,5 @@ public partial class Employee
 
     public string JobRole { get; set; }
 
-    // public virtual Address Address { get; set; }
+    public virtual Address Address { get; set; }
 }
