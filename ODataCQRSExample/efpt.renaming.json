@@ -5,7 +5,7 @@
          {
             "Columns": [
                {
-                  "Name": "ID",
+                  "Name": "EMPLOYEE_ID",
                   "NewName": "Id"
                },
                {
@@ -31,7 +31,7 @@
          {
             "Columns": [
                {
-                  "Name": "ID",
+                  "Name": "ADDRESS_ID",
                   "NewName": "Id"
                },
                {

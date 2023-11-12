@@ -19,5 +19,5 @@ public partial class Address
 
     public int? EmployeeId { get; set; }
 
-    public virtual Employee IdNavigation { get; set; }
+    public virtual Employee Employee { get; set; }
 }
